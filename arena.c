@@ -185,6 +185,6 @@ void arena_pop(Arena *arena, uint64_t size) {
     arena_pop_to(arena, pop_pos);
 }
 
-void arena_cleanr(Arena *arena) {
+void arena_clear(Arena *arena) {
     arena_pop_to(arena, 0);
 }
