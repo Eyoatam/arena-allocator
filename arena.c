@@ -184,3 +184,7 @@ void arena_pop(Arena *arena, uint64_t size) {
     uint64_t pop_pos = arena->curr->base_pos + arena->curr->pos - size;
     arena_pop_to(arena, pop_pos);
 }
+
+void arena_cleanr(Arena *arena) {
+    arena_pop_to(arena, 0);
+}

@@ -27,5 +27,6 @@ void arena_release(Arena *arena);
 void *arena_push(Arena *arena, uint64_t size, uint64_t align);
 void arena_pop_to(Arena *arena, uint64_t pos);
 void arena_pop(Arena *arena, uint64_t size);
+void arena_clear(Arena *arena);
 
 #endif 
